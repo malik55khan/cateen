@@ -1,0 +1,34 @@
+
+
+// media query mixin
+$small-device: 575px;
+$mobile-device: 767px;
+$tablate: 991px;
+$desktop-small: 1200px;
+
+@mixin small-device {
+   @media (max-width: #{$small-device}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin mobile-device {
+   @media (max-width: #{$mobile-device}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin tablate {
+   @media (max-width: #{$tablate}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin desktop-small {
+   @media (max-width: #{$desktop-small}) {
+       @content;
+   }
+}

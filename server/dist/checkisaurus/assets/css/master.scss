@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap');
+@import 'src/assets/css/variable.scss';
+body{ font-family: 'Roboto', sans-serif; font-size: 14px;}
+.display-table{ display: table;}
+.display-cell{ display: table-cell;}
+img{ max-width: 100%;}
+.banner{ background: url("../img/banner.jpg") no-repeat; background-size: cover; margin-bottom: 0px; position: relative; padding: 0px; padding-top:100px;
+    &:before{
+        position: absolute; left:0px; top:0px; bottom: 0px; right: 0px; content: "";
+        background: #637AB8; opacity: 0.3;
+    }
+    h1{
+        text-align: center; font-weight: 600; margin-bottom: 0px;   padding:180px 0px; position: relative; font-size: 85px; text-transform: uppercase; letter-spacing: 24px; color: #fff;
+        @include tablate{
+            font-size: 55px;
+        }
+        &:before{ position: absolute; border-radius: 6px; -webkit-border-radius: 6px; -ms-border-radius: 6px;
+            content: ""; left:50%; margin-top:-10px; width: 100px; margin-left:-50px; height: 6px; background: #FFFFFF;
+        }
+    }
+    .container{
+        z-index: 1; position: relative;
+    }
+}
+.banner-bottom{
+    background: #637AB8;padding: 25px; position: relative;
+    &:before{
+        position: absolute;
+        content: "";
+        border-left: 26px solid transparent;
+        border-right: 26px solid transparent;
+        margin-top: -26px;
+        border-bottom: 20px solid #637AB8;
+        left: 50%;
+        top:6px;        
+    }
+}
+.mbl-pos{
+    margin-top:-200px;
+    @include tablate{
+        margin-top: -140px;
+    }
+}
+.bnr-btn-cntnt{
+    color: #fff; text-transform: uppercase; margin-bottom: 25px;
+    h4{
+        font-size: 18px; font-weight: 300; margin-bottom: 0px;
+    }
+    p{
+        font-size: 26px; font-weight: 600; margin-bottom: 0px;
+    }
+}
+.bnr-btm-para{
+    p{
+        color: #fff; opacity: 0.8;
+    }
+    svg{
+        margin-top:5px;
+        @include tablate{
+            width: 22px;
+            height:22px;
+        }
+    }
+}
+.dwnld-btn   {
+    margin-top: 25px;
+    a{
+        width:150px; height: 50px; display: inline-block; margin-right:25px;
+    }
+    .btn-as{
+        background: url("../img/btn-as.png") no-repeat; 
+    }
+    .btn-gp{
+        background: url("../img/btn-gp.png") no-repeat; 
+    }
+}
+/****** HOW WORK  ******/
+.bnft-blk h3{color: #3E3E3E;}
+.how-work{ padding: 80px 0px;}
+.wrk-crcl{ width: 120px; display: inline-block; margin-bottom: 15px; line-height: 130px; background: #F3F7FF; height: 120px; border: 3px dashed #637AB8; border-radius: 50%; -webkit-border-radius: 50%; -ms-border-radius: 50%;} 
+.sec-title h3{font-weight: 300; font-size: 36px; color: #919191;}
+.sec-title{ margin-bottom: 80px;}
+.sec-title h3 strong{font-weight:600; color: #3A3A3A;}
+.wrk-crcl-wrp p{ font-size: 16px; font-weight: 500; max-width: 120px; margin: 0 auto; color: #637AB8;}
+.wrk-prgrs-bar{
+    position: relative;
+    &:before{ position: absolute; top: 60px; content: ""; left: 160px; border-bottom:3px dashed #637AB8; right: 160px;
+        @include tablate{
+            left: 15px;
+            right:126px;
+        }
+    }
+}
+/****** /HOW WORK  ******/
+/****** BENEFIT BLOCK  ******/
+.bnft-blk{ position: relative; 
+    svg{
+        @include tablate{
+            width:30px;
+            height: 30px;
+            margin-top:5px;
+        }
+    }
+}
+.bnft-cmn{
+    position: absolute; top: 0px; height: 100%; content: ""; left: 0px; width:41.666667%; background: #F3F7FF;
+}
+.bnft-rt{
+    left: auto; width:58.333333%; background: #637AB8; right: 0px;
+}
+.bnft-lt{
+    &:before{ position: absolute; content: ""; border-top:26px solid transparent; 
+        border-bottom:26px solid transparent; margin-top: -26px; border-left: 20px solid #F3F7FF; right: -20px;top:50%; z-index: 1;}
+}
+.p-top-btm-40{ padding-top: 60px; padding-bottom: 60px; padding-left: 40px;}
+.pos-relative{ position: relative; z-index: 1;}
+.bnft-para p{ color: #fff;}
+.bnft-blk .form-group{ margin:15px 0px;}
+/****** BENEFIT BLOCK  ******/
+/****** SPECIALIST BLOCK  ******/
+.spl-blk{ padding: 60px 0px; }
+.sec-title-shrt h3{ font-size: 28px; text-align: center; max-width: 400px; margin-left: auto; margin-right: auto; }
+.spcl-key .display-table{ width: 100%; height:150px;}
+.spcl-key{ margin: 25px 10px; text-align: center; background: #637AB8; border-radius: 6px; -webkit-border-radius: 6px; -ms-border-radius: 6px;
+    p{
+        font-size: 24px; color: #fff; font-weight: 500; margin-bottom: 0px;
+    }
+    .display-cell{ vertical-align: middle;}
+}
+.spl-blk {
+    .sec-title {
+        margin-bottom: 40px;
+    }
+    .container{ max-width: 1000px;}
+}
+.telemed-app-wrp{ 
+    padding: 30px 0px; margin-bottom: 50px; border-bottom: 150px solid #fff;
+    position: relative;
+    .bnft-lt{
+        left: 0px; width:50%; background: #637AB8; right: auto;
+    }
+    .bnft-rt{
+         right: 0px; width:50%; background: #F3F7FF; left: auto;
+    }
+    h3{
+        font-size: 28px; font-weight: 500; margin-bottom: 35px;
+    }
+    p{
+        font-size: 14px; color: #3E3E3E; line-height: 26px; padding-left: 40px; padding-right: 40px;
+    }
+}
+.mbl-skl-rt{ padding-right:40px; position: relative;
+    &:before{
+       position: absolute; content: ""; border-top:26px solid transparent; 
+        border-bottom:26px solid transparent; margin-top: -26px; border-left: 20px solid #637AB8; right: -20px;top:50%; z-index: 111;
+    }
+}
+
+/****** SPECIALIST BLOCK  ******/
+/****** TESTIMONIAL BLOCK  ******/
+.tst-wrap{padding-bottom: 80px; background: #F1F5F9;}
+.tst-wrap .container{ margin-top: -110px;}
+.tst-rpt-sld{ max-width: 670px; margin: 0 auto;}
+.tst-rpt-sld p{ font-style: italic; margin:40px 0px;}
+.tst-rpt-sld h4{font-size:16px; color:#515151; font-weight:600; margin-bottom: 0px;}
+.tst-wrap .carousel-control-prev-icon{
+    background: none;
+    &:after {
+        content: '\2039';
+        position: absolute;
+        font-size: 36px;
+        color: 
+        #787878;
+    }
+}
+.tst-wrap .carousel-control-next-icon{
+    background: none;
+    &:after {
+        content: '\203A';
+        position: absolute;
+        font-size: 36px;
+        color: 
+        #787878;
+    }     
+}
+.tst-wrap{
+    .carousel-control{
+        span{
+            position: relative;
+            top:14%;
+        }
+    }
+}
+.color-header{
+    background: #49609D; z-index: 11 !important;
+    padding-top:0px; padding-bottom: 0px;
+    .navbar-brand{
+        padding: 0px; padding-top:5px;
+        svg{
+            width:60px; height:60px;
+        }
+    }
+    .nav-item{
+        a:hover{
+            color: #fff !important; opacity: 0.5;
+        }
+    }
+}
+/****** /TESTIMONIAL BLOCK  ******/
+

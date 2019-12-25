@@ -1,0 +1,76 @@
+body{background: $light-bg-color;}
+.main-container{padding: 100px 20px 0 260px; @include transition(0.4s);
+    &.sidebar-close{padding-left: 20px;
+     .db-sidebar{left: -240px;}
+    }
+}
+
+.db-header{
+    .filter-cate-search-box{width: 100%; max-width: 500px;
+    .mat-form-field-wrapper{padding: 0;}
+    .mat-form-field-underline{display: none;}
+    .mat-icon{color: $primary-color;}
+    .mat-input-element{line-height: 1.4;}
+    .mat-form-field-infix{border-top: 1.2em solid transparent;}
+    .mat-form-field-should-float{
+		.mat-form-field-label {opacity: 0;}
+		
+	}
+    }
+}
+
+
+
+.db-main-hdd{margin-bottom: 20px;
+    h2{font-size: 20px; font-weight: 400;}
+}
+
+.white-bx-shadow-hdd{margin-bottom: 30px;
+    h3{font-size: 20px; font-weight: 400;}
+}
+
+.mat-table-box {
+    table.mat-table{box-shadow: none; width: 100%;
+        tr.mat-header-row{background: #F5F6FA;}
+        th{font-size: 14px; color: #000;border-bottom: 0;}
+    }
+}
+
+.white-bx-shadow-db-hdr {padding: 20px;border-bottom: 1px solid #ccc;
+    h4{font-size: 18px;}
+}
+
+mat-form-field.full-width-input{width: 100%;}
+
+.profile-left-img-outer{position: relative;max-width: 130px;margin: 0 auto;
+    .profile-left-img{@include border-radius(50%);width: 130px; height: 130px; display: inline-block;border:1px solid $primary-color;overflow: hidden;
+        img{min-width: 100%;min-height: 100%;}
+    }
+}
+.upload-pic-pencil {padding: 5px;text-align: center;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #f5f5fa;color: $primary-color;
+    position: absolute;bottom:10px;border:1px solid $primary-color;
+    input{position: absolute;left: -100px;top: 0;height: 100%; cursor: pointer;z-index: 99;opacity: 0;}
+}
+
+
+body{
+    .ad-time-popup{
+         .ui-dialog .ui-dialog-titlebar{background:#617cff;border:none; color: $white-color;background: linear-gradient(to right, #617cff 0%, #449bfd 100%);}
+         .ui-datepicker.ui-datepicker-timeonly{border:none;}
+         .ui-datepicker.ui-widget.ui-datepicker-timeonly .ui-timepicker {border-top: 0;background: #f0f3ff; border: none!important;}
+         .form-body{padding: 10px;text-align: center;
+        h5{font-weight: 600;font-size: 16px;text-align: center;color: #062b40;margin-bottom: 10px;}
+        }
+        .ui-calendar.ui-calendar-timeonly{width: 100%;}
+        .ui-dialog-titlebar-icon{color: $white-color !important;}
+        .ui-button{background:#617cff; background: linear-gradient(to right, #617cff 0%, #449bfd 100%);border:none;
+        .ui-button-icon-left{display: none;}
+        &.ui-button-text-icon-left .ui-button-text{    padding: 7px 22px;}
+        }
+    }
+}
