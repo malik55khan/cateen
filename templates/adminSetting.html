@@ -1,0 +1,34 @@
+<div class="content-body new-post-panel">
+  <h1 id="menu-title">Update Settings</h1>
+  <br>
+  <button type="button" class="button form-control" id="intimateButton">Intimate To all for payments</button><br>
+  <form id="settingForm" enctype="multipart/form-data">
+    
+    <div class="form-group">
+      <label>Update QR Image</label>
+      <input type="file" name="file" id="file">
+    </div>
+    <div class="form-group">
+      <label>Add Phone Payment Details id any</label>
+      <input type="text" required  name="phone" id="phone" class="form-control"
+        placeholder="Add Phone Payment Details id any">
+    </div>
+    <div class="form-group">
+      <label>Add UPI id any Details</label>
+      <input type="text" required  name="UPI" id="UPI" class="form-control"
+        placeholder="Add UPI id any Details">
+    </div>
+    <div class="form-group">
+        <label>Active/Deactive Payment Button</label>
+        <label class="switch">
+            <input id="isButtonActive" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+    </div>
+    <div class="clearfix"></div>
+    
+    <button type="submit" class="button form-control submit-button">Save</button><br>
+    <button type="button" class="button-black form-control" id="go-back-btn">Go Back</button> 
+  </form>
+
+</div>
